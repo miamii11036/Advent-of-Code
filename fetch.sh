@@ -23,4 +23,3 @@ for day in $(seq 1 25); do #題目每年只有25題
 
     sleep 1 #等待1秒，避免過多請求
 done
-
