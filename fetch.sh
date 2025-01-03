@@ -10,14 +10,14 @@ cd "$YEAR"
 
 
 for day in $(seq 1 25); do #題目每年只有25題
-    mkdir "Day $day"
+    mkdir "Day$day"
 
     # 確保目錄存在後再切換
-    if [ -d "Day $day" ]; then
-        cd "Day $day" && touch "solution.py" && touch "puzzle.md"
+    if [ -d "Day$day" ]; then
+        cd "Day$day" && touch "solution.py" && touch "puzzle.md"
         cd ..
     else
-        echo "目錄 $YEAR/Day $day 不存在，無法切換。"
+        echo "目錄 $YEAR/Day$day 不存在，無法切換。"
         exit 1
     fi
 
